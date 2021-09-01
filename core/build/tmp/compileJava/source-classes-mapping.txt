@@ -1,0 +1,11 @@
+com/justai/jaicf/helpers/java/WeakIdentityHashMap.java
+ com.justai.jaicf.helpers.java.WeakIdentityHashMap
+ com.justai.jaicf.helpers.java.WeakIdentityHashMap$Entry
+ com.justai.jaicf.helpers.java.WeakIdentityHashMap$EntryIterator
+ com.justai.jaicf.helpers.java.WeakIdentityHashMap$EntrySet
+ com.justai.jaicf.helpers.java.WeakIdentityHashMap$HashIterator
+ com.justai.jaicf.helpers.java.WeakIdentityHashMap$KeyIterator
+ com.justai.jaicf.helpers.java.WeakIdentityHashMap$KeySet
+ com.justai.jaicf.helpers.java.WeakIdentityHashMap$SimpleEntry
+ com.justai.jaicf.helpers.java.WeakIdentityHashMap$ValueIterator
+ com.justai.jaicf.helpers.java.WeakIdentityHashMap$Values

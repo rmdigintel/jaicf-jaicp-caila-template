@@ -30,6 +30,9 @@ dependencies {
     implementation("com.just-ai.jaicf:core:$jaicf")
     implementation("com.just-ai.jaicf:jaicp:$jaicf")
     implementation("com.just-ai.jaicf:caila:$jaicf")
+
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.6.0")
+    testRuntime("org.junit.jupiter:junit-jupiter-engine:5.6.0")
 }
 
 tasks {
@@ -38,6 +41,12 @@ tasks {
     }
     compileTestKotlin {
         kotlinOptions.jvmTarget = "1.8"
+    }
+    test {
+        useJUnitPlatform()
+    }
+    build {
+        dependsOn(shadowJar)
     }
 }
 
@@ -48,3 +57,4 @@ tasks.create("stage") {
 tasks.withType<com.justai.jaicf.plugins.jaicp.build.JaicpBuild> {
     mainClassName.set(application.mainClassName)
 }
+
